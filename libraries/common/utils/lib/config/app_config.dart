@@ -1,8 +1,8 @@
 import 'app_constant.dart';
 
 enum Flavor {
-  DEVELOPMENT,
-  RELEASE,
+  development,
+  release,
 }
 
 class Config {
@@ -10,9 +10,9 @@ class Config {
 
   static String get title {
     switch (appFlavor) {
-      case Flavor.RELEASE:
+      case Flavor.release:
         return AppConstant.appName;
-      case Flavor.DEVELOPMENT:
+      case Flavor.development:
       default:
         return AppConstant.appNameDev;
     }
@@ -20,9 +20,9 @@ class Config {
 
   static bool get isDebug {
     switch (appFlavor) {
-      case Flavor.RELEASE:
+      case Flavor.release:
         return false;
-      case Flavor.DEVELOPMENT:
+      case Flavor.development:
       default:
         return true;
     }

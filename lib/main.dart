@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:utils/utils.dart';
 
-final appNameProvider = Provider((_) => "Knit Together");
+final appNameProvider = Provider((_) => Config.title);
 
 void main() async {
-  Config.appFlavor = Flavor.DEVELOPMENT;
+  Config.appFlavor = Flavor.development;
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     const ProviderScope(

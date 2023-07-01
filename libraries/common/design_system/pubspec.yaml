@@ -33,10 +33,6 @@ dependencies:
   transparent_image: ^2.0.1
   flutter_animate: ^4.1.1+1
   focusable_control_builder: ^1.0.1+1
-  menubar:
-    git:
-      url: https://github.com/google/flutter-desktop-embedding.git
-      path: plugins/menubar
 
 dev_dependencies:
   flutter_test:
