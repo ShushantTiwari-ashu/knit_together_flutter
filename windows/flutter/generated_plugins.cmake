@@ -5,7 +5,6 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   dynamic_color
   file_selector_windows
-  menubar
   url_launcher_windows
   window_size
 )
