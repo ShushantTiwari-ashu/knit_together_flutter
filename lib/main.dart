@@ -1,3 +1,5 @@
+import 'package:core/core.dart' as di;
+import 'package:domain/constant/api_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:utils/utils.dart';
@@ -7,6 +9,7 @@ final appNameProvider = Provider((_) => Config.title);
 void main() async {
   Config.appFlavor = Flavor.development;
   WidgetsFlutterBinding.ensureInitialized();
+  di.init(ApiConstant.baseUrlDebug);
   runApp(
     const ProviderScope(
       child: MyApp(),

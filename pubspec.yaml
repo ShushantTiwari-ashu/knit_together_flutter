@@ -79,6 +79,8 @@ dependencies:
 
   data:
     path: libraries/data
+  core:
+    path: libraries/core
   design_system:
     path: libraries/common/design_system
   utils:
