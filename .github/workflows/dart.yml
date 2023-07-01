@@ -33,12 +33,22 @@ jobs:
         run: |
          cd libraries
           # Iterate over each module directory
-          for module in data common/design_system common/utils domain feature; do
+          for module in data domain feature; do
             cd $module
             flutter pub get
             cd ..
           done
-
+          
+      - name: Run common module pub get 
+        run: |
+          cd libraries/common
+          # Iterate over each module directory
+          for module in design_system utils; do
+            cd $module
+            flutter pub get
+            cd ..
+          done
+          
       - name: Analyze code
         run: flutter analyze
 
