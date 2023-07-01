@@ -33,7 +33,7 @@ jobs:
         run: |
          cd libraries
           # Iterate over each module directory
-          for module in data design_system utils domain feature; do
+          for module in data common/design_system common/utils domain feature; do
             cd $module
             flutter pub get
             cd ..
