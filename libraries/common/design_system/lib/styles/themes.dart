@@ -18,11 +18,12 @@ class AppThemes {
       onBackground: Colors.black,
       onError: Colors.white,
     ),
+      useMaterial3: true
     // Add more theme configurations as per your design system
   );
 
   static final ThemeData darkTheme = ThemeData(
-    colorScheme: const ColorScheme.dark(
+    colorScheme: ColorScheme.dark(
       primary: ColorPalette.primaryBlue,
       primaryContainer: ColorPalette.primaryGreen,
       secondary: ColorPalette.secondaryAmber,
@@ -30,12 +31,13 @@ class AppThemes {
       surface: Colors.black,
       background: Colors.black,
       error: ColorPalette.primaryRed,
-      onPrimary: Colors.white,
+      onPrimary: Colors.deepPurple.shade200,
       onSecondary: Colors.black,
       onSurface: Colors.white,
       onBackground: Colors.white,
       onError: Colors.white,
     ),
+    useMaterial3: true
     // Add more theme configurations as per your design system
   );
 

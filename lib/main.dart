@@ -1,4 +1,5 @@
 import 'package:core/core.dart' as di;
+import 'package:design_system/styles/styles.dart';
 import 'package:domain/constant/api_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -26,10 +27,8 @@ class MyApp extends HookConsumerWidget {
     final String value = ref.watch(appNameProvider);
     return MaterialApp(
       title: value,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      darkTheme: AppThemes.darkTheme,
+      theme: AppThemes.lightTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
